@@ -1,0 +1,68 @@
+
+********
+TESTFILE OUTPUT FOR CRAWLER
+********
+
+testing start...
+
+
+test for only 1 arg: 
+
+improper # of parameters, usage: ./crawler seedURL pageDirectory maxDepth
+
+
+test for only 2 args: 
+
+improper # of parameters, usage: ./crawler seedURL pageDirectory maxDepth
+
+
+test for 4 args: 
+
+improper # of parameters, usage: ./crawler seedURL pageDirectory maxDepth
+
+
+test for non-existent directory: 
+
+invalid pageDirectory
+page directory initialization failed
+
+
+test for too large of depth: 
+
+improper maxDepth, must be int [0,10]
+
+test for too small of depth: 
+
+improper maxDepth, must be int [0,10]
+
+test for non-internal domain: 
+
+seedURL normalization error, check for valid URL
+
+
+test for invalid domain: 
+
+seedURL normalization error, check for valid URL
+
+
+test normal function: 
+
+Fetched: http://cs50tse.cs.dartmouth.edu/tse/letters/index.html
+Scanning: http://cs50tse.cs.dartmouth.edu/tse/letters/index.html
+Found: http://cs50tse.cs.dartmouth.edu/tse/letters/A.html
+Added: http://cs50tse.cs.dartmouth.edu/tse/letters/A.html
+Fetched: http://cs50tse.cs.dartmouth.edu/tse/letters/A.html
+Scanning: http://cs50tse.cs.dartmouth.edu/tse/letters/A.html
+Found: https://en.wikipedia.org/wiki/Algorithm
+IgnExtrn: https://en.wikipedia.org/wiki/Algorithm
+Found: http://cs50tse.cs.dartmouth.edu/tse/letters/B.html
+Added: http://cs50tse.cs.dartmouth.edu/tse/letters/B.html
+Found: http://cs50tse.cs.dartmouth.edu/tse/letters/index.html
+IgnDupl: http://cs50tse.cs.dartmouth.edu/tse/letters/index.html
+Fetched: http://cs50tse.cs.dartmouth.edu/tse/letters/B.html
+All necessary files exist in the directory.
+
+No unnecessary saved files found.
+
+
+testing complete, exiting...

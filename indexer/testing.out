@@ -1,0 +1,43 @@
+
+********
+TESTFILE OUTPUT FOR indexer
+********
+
+testing start...
+
+
+rm -f *~ *.o *.dSYM
+rm -f indexer indextest
+rm -rf data/
+gcc -Wall -pedantic -std=c11 -ggdb -I../libcs50 -I../common   -c -o indextest.o indextest.c
+gcc -Wall -pedantic -std=c11 -ggdb -I../libcs50 -I../common indextest.o ../common/common.a ../libcs50/libcs50-given.a -o indextest
+gcc -Wall -pedantic -std=c11 -ggdb -I../libcs50 -I../common   -c -o indexer.o indexer.c
+gcc -Wall -pedantic -std=c11 -ggdb -I../libcs50 -I../common indexer.o ../common/common.a ../libcs50/libcs50-given.a -o indexer
+
+test for only no args: 
+
+usage: ./indexer pageDir filename
+
+test for only 1 arg: 
+
+usage: ./indexer pageDir filename
+
+test for too many args: 
+
+usage: ./indexer pageDir filename
+
+test for fake directory: 
+
+unable to find ./crawler file in given pageDir, exiting...
+
+test for inaccessible folder: 
+
+unable to find ./crawler file in given pageDir, exiting...
+
+test for running normally, should return nothing: 
+
+test using indexer, should return nothing: 
+
+comparing files:
+
+Index successfully created and matched!
